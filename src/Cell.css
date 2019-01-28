@@ -1,0 +1,44 @@
+.cell {
+    display: block;
+    height: 140px;
+    width: 140px;
+    background-color: rgb(216, 187, 187);
+}
+
+.flex-item {
+    border: 2px black solid;
+
+    background: rgb(216, 187, 187);
+    padding: 5px;
+    width: 200px;
+    height: 150px;
+    margin: 10px;
+    line-height: 150px;
+    color: white;
+    font-weight: bold;
+    font-size: 3em;
+    text-align: center;
+    flex: 1 0 30%; /* explanation below */
+  }
+.flex-item[value="X"]::before {
+    content: "X";
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+    display: inline-block;
+    bottom: 50%;
+    left: 2%;
+    color: rebeccapurple;
+    font-size: 90px;
+}
+.flex-item[value="O"]::before {
+    content: "O";
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+    display: inline-block;
+    bottom: 50%;
+    left: 2%;
+    color: rgb(228, 17, 17);
+    font-size: 90px;
+}
